@@ -1,4 +1,7 @@
-document.addEventListener("DOMContentloaded", (e) => {
-  // invoking a function here will make sure it happens on page load
-  // your code here
-}
+// same as document ready in jQuery
+$(document).ready(function() {
+$("#title").html(movies.Titanic.title);
+$("#Terminator-2").on("click", function() {
+  $("#title").html(movies.Terminator2.title);
+});
+});
